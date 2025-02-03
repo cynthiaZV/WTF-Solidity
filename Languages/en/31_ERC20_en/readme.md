@@ -16,11 +16,11 @@ Twitter: [@0xAA_Science](https://twitter.com/0xAA_Science) | [@WTFAcademy_](http
 
 Community: [Discord](https://discord.gg/5akcruXrsk)｜[Wechat](https://docs.google.com/forms/d/e/1FAIpQLSe4KGT8Sh6sJ7hedQRuIYirOoZK_85miz3dw7vA1-YjodgJ-A/viewform?usp=sf_link)｜[Website wtf.academy](https://wtf.academy)
 
-Codes and tutorials are open source on GitHub: [github.com/AmazingAng/WTFSolidity](https://github.com/AmazingAng/WTFSolidity)
+Codes and tutorials are open source on GitHub: [github.com/AmazingAng/WTF-Solidity](https://github.com/AmazingAng/WTF-Solidity)
 
 -----
 
-In this lecture, we will introduce the ERC20 token standard on Ethereum and issue our own test tokens.
+In this lecture, we will introduce the ERC20 token standard on Ethereum and issue our test tokens.
 
 ## ERC20
 
@@ -33,7 +33,7 @@ ERC20 is a token standard on Ethereum, which originated from the `EIP20` propose
 - Token Information (optional): name, symbol, decimal
 
 ## IERC20
-`IERC20` is the interface contract of the `ERC20` token standard, which specifies the functions and events that `ERC20` tokens need to implement. The reason for defining an interface is that with the standard, there are universal function names, input and output parameters for all `ERC20` tokens. In the interface functions, only the function name, input parameters, and output parameters need to be defined, and it does not matter how the function is implemented internally. Therefore, the functions are divided into two contents: internal implementation and external interface, focusing on implementation and agreement of shared data between interfaces. This is why we need two files `ERC20.sol` and `IERC20.sol` to implement a contract.
+`IERC20` is the interface contract of the `ERC20` token standard, which specifies the functions and events that `ERC20` tokens need to implement. The reason for defining an interface is that with the standard, there are universal function names and input and output parameters for all `ERC20` tokens. In the interface functions, only the function name, input parameters, and output parameters need to be defined, and it does not matter how the function is implemented internally. Therefore, the functions are divided into two contents: internal implementation and external interface, focusing on the implementation and agreement of shared data between interfaces. This is why we need two files `ERC20.sol` and `IERC20.sol` to implement a contract.
 
 ### Event
 
